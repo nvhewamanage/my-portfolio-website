@@ -1,5 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import Home from "./sections/Home/Home";
+import About from "./sections/About/About";
 
 function App() {
   return (
@@ -9,13 +10,7 @@ function App() {
       <main>
         <Home />
 
-        <section id="about" className="section">
-          <div className="container">
-            <h2 className="section-title">
-              About
-            </h2>
-          </div>
-        </section>
+        <About />
 
         <section id="experience" className="section">
           <div className="container">
