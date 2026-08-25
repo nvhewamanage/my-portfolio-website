@@ -144,8 +144,8 @@ function About() {
 
             <p className="education-description">
               Developing a strong foundation in programming,
-              software engineering, databases, web development,
-              computer networks and other areas of computing.
+              software engineering, databases, web development
+              and other areas of computing.
             </p>
 
           </motion.div>
