@@ -4,6 +4,7 @@ import About from "./sections/About/About";
 import Experience from "./sections/Experience/Experience";
 import Skills from "./sections/Skills/Skills";
 import Projects from "./sections/Projects/Projects";
+import Certifications from "./sections/Certifications/Certifications";
 
 function App() {
   return (
@@ -21,13 +22,7 @@ function App() {
 
         <Projects />
 
-        <section id="certifications" className="section">
-          <div className="container">
-            <h2 className="section-title">
-              Certifications
-            </h2>
-          </div>
-        </section>
+        <Certifications />
 
         <section id="contact" className="section">
           <div className="container">
