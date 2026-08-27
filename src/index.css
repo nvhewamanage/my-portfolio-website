@@ -1,6 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 /* =========================================
    GLOBAL DESIGN SYSTEM
 ========================================= */
@@ -4541,4 +4546,447 @@ section {
     width: 40px;
     height: 40px;
   }
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.footer {
+  position: relative;
+
+  padding: 65px 0 25px;
+
+  border-top: 1px solid
+    rgba(148, 163, 184, 0.08);
+
+  background:
+    rgba(2, 6, 23, 0.9);
+
+  overflow: hidden;
+}
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: -180px;
+  left: 50%;
+
+  width: 500px;
+  height: 300px;
+
+  transform: translateX(-50%);
+
+  border-radius: 50%;
+
+  background:
+    rgba(59, 130, 246, 0.05);
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+/* =========================================
+   FOOTER TOP
+========================================= */
+
+.footer-top {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr 1fr 1fr;
+
+  gap: 70px;
+}
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-logo {
+  display: inline-block;
+
+  color: #f8fafc;
+
+  font-size: 25px;
+
+  font-weight: 800;
+
+  letter-spacing: -0.05em;
+}
+
+.footer-logo span {
+  color: #60a5fa;
+}
+
+.footer-brand p {
+  max-width: 320px;
+
+  margin-top: 16px;
+
+  color: #64748b;
+
+  font-size: 11px;
+
+  line-height: 1.8;
+}
+
+/* =========================================
+   FOOTER HEADING
+========================================= */
+
+.footer-heading {
+  display: block;
+
+  margin-bottom: 18px;
+
+  color: #475569;
+
+  font-size: 9px;
+
+  font-weight: 700;
+
+  letter-spacing: 0.12em;
+}
+
+/* =========================================
+   FOOTER NAVIGATION
+========================================= */
+
+.footer-links {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, max-content);
+
+  gap: 11px 30px;
+}
+
+.footer-links a {
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-links a:hover {
+  color: #60a5fa;
+
+  transform: translateX(3px);
+}
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-socials {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+}
+
+.footer-social {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  width: fit-content;
+
+  color: #94a3b8;
+
+  font-size: 11px;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.footer-social:hover {
+  color: #60a5fa;
+
+  transform: translateX(3px);
+}
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+  height: 1px;
+
+  margin: 50px 0 22px;
+
+  background:
+    rgba(148, 163, 184, 0.08);
+}
+
+/* =========================================
+   FOOTER BOTTOM
+========================================= */
+
+.footer-bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  gap: 20px;
+
+  color: #475569;
+
+  font-size: 9px;
+}
+
+.footer-made-with {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+.footer-made-with svg {
+  color: #60a5fa;
+}
+
+/* =========================================
+   BACK TO TOP
+========================================= */
+
+.footer-top-button {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  border: 1px solid
+    rgba(148, 163, 184, 0.1);
+
+  border-radius: 10px;
+
+  background:
+    rgba(15, 23, 42, 0.6);
+
+  color: #94a3b8;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    background 0.25s ease;
+}
+
+.footer-top-button:hover {
+  transform: translateY(-3px);
+
+  border-color:
+    rgba(96, 165, 250, 0.3);
+
+  background:
+    rgba(30, 41, 59, 0.7);
+
+  color: #60a5fa;
+}
+
+/* =========================================
+   FOOTER TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .footer-top {
+    grid-template-columns:
+      1fr 1fr;
+
+    gap: 45px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+}
+
+
+/* =========================================
+   FOOTER MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .footer {
+    padding-top: 50px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+  }
+
+  .footer-brand p {
+    max-width: 100%;
+  }
+
+  .footer-links {
+    grid-template-columns:
+      repeat(2, max-content);
+  }
+
+  .footer-divider {
+    margin-top: 40px;
+  }
+
+  .footer-bottom {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 15px;
+  }
+
+  .footer-top-button {
+    position: absolute;
+
+    right: 0;
+
+    bottom: 0;
+  }
+
+}
+
+/* =========================================*/
+::selection {
+  background: rgba(59, 130, 246, 0.25);
+
+  color: #e2e8f0;
+}
+
+/* =========================================
+   CUSTOM SCROLLBAR
+========================================= */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #020617;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
+
+/* =========================================
+   PAGE LOAD
+========================================= */
+
+body {
+  animation: pageLoad 0.7s ease-out;
+}
+
+@keyframes pageLoad {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+/* =========================================*/
+
+.reveal {
+  opacity: 0;
+
+  transform: translateY(20px);
+
+  animation:
+    revealElement 0.7s
+    ease forwards;
+}
+
+@keyframes revealElement {
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+
+    animation-iteration-count: 1 !important;
+
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* =========================================*/
+
+.container {
+  width: min(1120px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+@media (max-width: 600px) {
+
+  .container {
+    width: min(
+      100% - 32px,
+      1120px
+    );
+  }
+
+}
+
+/* =========================================*/
+
+section[id] {
+  scroll-margin-top: 90px;
 }
