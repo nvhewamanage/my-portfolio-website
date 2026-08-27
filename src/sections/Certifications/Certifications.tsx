@@ -18,7 +18,7 @@ const certifications = [
       "Prompt Writing",
     ],
     certificateUrl: "https://learn.kodekloud.com/learn/certificate/70c7bb17-5c79-4b8c-a160-d896be5002fd",
-    color: "blue",
+    color: "green",
   },
 
   /*{

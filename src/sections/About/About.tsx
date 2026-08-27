@@ -2,8 +2,6 @@ import { motion } from "framer-motion";
 import {
   GraduationCap,
   Code2,
-  Database,
-  Layers3,
   CalendarDays,
   MapPin,
 } from "lucide-react";
