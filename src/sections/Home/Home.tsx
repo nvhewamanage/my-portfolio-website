@@ -75,7 +75,7 @@ function Home() {
           <div className="hero-buttons">
 
             <a
-              href="/documents/Viduranga-Hewamanage-cv.pdf"
+              href="/documents/Viduranga_Hewamanage_Resume.pdf"
               download
               className="primary-button"
             >

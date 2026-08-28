@@ -169,7 +169,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <p>
-            © {currentYear} Your Name.
+            © {currentYear} Navodh Viduranga.
             All rights reserved.
           </p>
 
