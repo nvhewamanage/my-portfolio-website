@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import {
-  Palette,
   Server,
   Database,
 } from "lucide-react";
