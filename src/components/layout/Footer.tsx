@@ -1,7 +1,6 @@
 import {
-  Mail,
   ArrowUp,
-  Heart,
+  Mail,
 } from "lucide-react";
 
 import{
@@ -12,17 +11,17 @@ import{
 const socialLinks = [
   {
     name: "GitHub",
-    href: "https://github.com/",
+    href: "https://github.com/nvhewamanage",
     icon: FaGithub,
   },
   {
     name: "LinkedIn",
-    href: "https://linkedin.com/",
+    href: "https://www.linkedin.com/in/viduranga-hewamanage/",
     icon: FaLinkedin,
   },
   {
     name: "Email",
-    href: "mailto:your.email@gmail.com",
+    href: "mailto:navodhviduranga2002@gmail.com",
     icon: Mail,
   },
 ];
@@ -30,7 +29,7 @@ const socialLinks = [
 function Footer() {
   const currentYear = new Date().getFullYear();
 
-  const scrollToTop = () => {
+  const handleBackToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
@@ -40,153 +39,90 @@ function Footer() {
   return (
     <footer className="footer">
 
-      <div className="container">
+      <div className="footer-container">
 
-        {/* =================================
-            FOOTER TOP
-        ================================= */}
+        {/* =====================================
+            LEFT — COPYRIGHT
+        ===================================== */}
 
-        <div className="footer-top">
+        <div className="footer-left">
 
-          {/* Brand */}
-
-          <div className="footer-brand">
-
-            <a
-              href="#home"
-              className="footer-logo"
-            >
-              VH<span>.</span>
-            </a>
-
-            <p>
-              Software & Web Developer building
-              modern, scalable and user-focused
-              digital experiences.
-            </p>
-
-          </div>
-
-          {/* Navigation */}
-
-          <div className="footer-navigation">
-
-            <span className="footer-heading">
-              NAVIGATION
-            </span>
-
-            <div className="footer-links">
-
-              <a href="#home">
-                Home
-              </a>
-
-              <a href="#about">
-                About
-              </a>
-
-              <a href="#experience">
-                Experience
-              </a>
-
-              <a href="#skills">
-                Skills
-              </a>
-
-              <a href="#projects">
-                Projects
-              </a>
-
-              <a href="#certifications">
-                Certifications
-              </a>
-
-              <a href="#contact">
-                Contact
-              </a>
-
-            </div>
-
-          </div>
-
-          {/* Social */}
-
-          <div className="footer-social-wrapper">
-
-            <span className="footer-heading">
-              CONNECT
-            </span>
-
-            <div className="footer-socials">
-
-              {socialLinks.map((social) => {
-
-                const Icon = social.icon;
-
-                return (
-                  <a
-                    key={social.name}
-                    href={social.href}
-                    target={
-                      social.name === "Email"
-                        ? undefined
-                        : "_blank"
-                    }
-                    rel={
-                      social.name === "Email"
-                        ? undefined
-                        : "noopener noreferrer"
-                    }
-                    aria-label={social.name}
-                    className="footer-social"
-                  >
-                    <Icon size={16} />
-
-                    <span>
-                      {social.name}
-                    </span>
-                  </a>
-                );
-
-              })}
-
-            </div>
-
-          </div>
-
-        </div>
-
-        {/* =================================
-            DIVIDER
-        ================================= */}
-
-        <div className="footer-divider" />
-
-        {/* =================================
-            FOOTER BOTTOM
-        ================================= */}
-
-        <div className="footer-bottom">
-
-          <p>
-            © {currentYear} Navodh Viduranga.
+          <p className="footer-copyright">
+            © {currentYear}{" "}
+            <span>Viduranga Hewamanage</span>.
             All rights reserved.
           </p>
 
-          <p className="footer-made-with">
-            Built with
-            <Heart size={12} />
-            React & TypeScript
+          <p className="footer-tagline">
+            Building the future, one line of code at a time.
           </p>
+
+        </div>
+
+
+        {/* =====================================
+            CENTER — BACK TO TOP
+        ===================================== */}
+
+        <div className="footer-center">
+
+          <span className="footer-back-title">
+            Back to top
+          </span>
 
           <button
             type="button"
-            onClick={scrollToTop}
-            className="footer-top-button"
+            className="footer-back-button"
+            onClick={handleBackToTop}
             aria-label="Back to top"
           >
-            <ArrowUp size={16} />
+            <ArrowUp size={24} strokeWidth={1.8} />
           </button>
+
+        </div>
+
+
+        {/* =====================================
+            RIGHT — SOCIAL LINKS
+        ===================================== */}
+
+        <div className="footer-right">
+
+          <span className="footer-follow-title">
+            Follow me
+          </span>
+
+          <div className="footer-socials">
+
+            {socialLinks.map((social) => {
+              const Icon = social.icon;
+
+              return (
+                <a
+                  key={social.name}
+                  href={social.href}
+                  className="footer-social"
+                  target={
+                    social.name === "Email"
+                      ? undefined
+                      : "_blank"
+                  }
+                  rel={
+                    social.name === "Email"
+                      ? undefined
+                      : "noopener noreferrer"
+                  }
+                  aria-label={social.name}
+                >
+                  <Icon
+                    size={21}
+                    strokeWidth={1.8}
+                  />
+                </a>
+              );
+            })}
+
+          </div>
 
         </div>
 
