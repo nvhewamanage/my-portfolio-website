@@ -15,7 +15,9 @@ const certifications = [
     description:
       "Completed Learn by Doing – Prompt Engineering 101 by KodeKloud, gaining practical knowledge of prompt engineering techniques and effective AI interaction strategies.",
     skills: [
-      "Prompt Writing",
+      "Prompt Engineering",
+      "Generative AI",
+      "Prompt Optimization",
     ],
     certificateUrl: "https://learn.kodekloud.com/learn/certificate/70c7bb17-5c79-4b8c-a160-d896be5002fd",
     color: "green",
@@ -30,7 +32,8 @@ const certifications = [
       "",
     skills: [
       "JavaSript",
-      "JavaSript Coding",
+      "JavaSript Programming",
+      "Programming Fundamentals"
     ],
     certificateUrl: "",
     color: "purple",
@@ -44,7 +47,7 @@ const certifications = [
     description:
       "",
     skills: [
-      "Developing",
+      "Web Development",
       "Full-Stack Development",
     ],
     certificateUrl: "",
