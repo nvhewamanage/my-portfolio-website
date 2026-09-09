@@ -36,6 +36,21 @@ const certifications = [
     color: "purple",
   },
 
+  {
+    title: "Full Stack Developer - Trainee",
+    organization: "University of Moratuwa",
+    date: "2026",
+    credentialId: "In-Progress",
+    description:
+      "",
+    skills: [
+      "Developing",
+      "Full-Stack Development",
+    ],
+    certificateUrl: "",
+    color: "orange",
+  },
+
 ];
 
 function Certifications() {
