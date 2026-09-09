@@ -21,21 +21,21 @@ const certifications = [
     color: "green",
   },
 
-  /*{
-    title: "Certification Name",
-    organization: "Issuing Organization",
+  {
+    title: "JavaScript Essentials 1",
+    organization: "Cisco Networking Academy",
     date: "2026",
-    credentialId: "CREDENTIAL-ID",
+    credentialId: "In-Progress",
     description:
-      "Briefly describe the certification and the technical areas covered.",
+      "",
     skills: [
-      "Technology",
-      "Technology",
-      "Technology",
+      "JavaSript",
+      "JavaSript Coding",
     ],
-    certificateUrl: "#",
+    certificateUrl: "",
     color: "purple",
-  },*/
+  },
+
 ];
 
 function Certifications() {
