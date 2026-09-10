@@ -26,16 +26,16 @@ const certifications = [
   {
     title: "JavaScript Essentials 1",
     organization: "Cisco Networking Academy",
-    date: "2026",
-    credentialId: "In-Progress",
+    date: "Sep 2026",
+    credentialId: "CERTIFIED",
     description:
-      "",
+      "Successfully completed the JavaScript Essentials 1 course by Cisco Networking Academy, demonstrating proficiency in JavaScript programming and foundational coding skills.",
     skills: [
-      "JavaSript",
-      "JavaSript Programming",
+      "JavaScript",
+      "JavaScript Programming",
       "Programming Fundamentals"
     ],
-    certificateUrl: "",
+    certificateUrl: "https://www.credly.com/badges/2d6d16d5-1454-4eab-8682-7a011bebfe17/public_url",
     color: "purple",
   },
 
